@@ -34,8 +34,8 @@ public class Powerup : MonoBehaviour
                 powerupManager.Spawn();
                 Debug.Log("SPawned");
                 GameObject.Find("Audio Manager").GetComponent<AudioManager>().Play(powerupClip, 0.5f, 1f);
+                numOfCollisions += 1;
             }
-            numOfCollisions += 1;
         }
     }
 }
